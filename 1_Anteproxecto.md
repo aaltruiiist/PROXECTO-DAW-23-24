@@ -139,9 +139,10 @@
 
 #### 5.1.1- Viabilidade técnica
 
-> Os recursos tanto físcos como de software para o desarrollo dunha aplicación web non son excesivamente costosos. Tendo unha boa planificacion e presuposto axeitadp
+> Os recursos tanto físcos como de software para o desarrollo dunha aplicación web non son excesivamente costosos. Tendo unha boa planificacion e presuposto axeitado, ademais como eu mesmo levarei todo o proceso eso reduce o seu coste en gran parte.
 >
 > - Existe algún impedimento técnico que dificulte o proceso produtivo?
+>  Non, xa que como explico antes, eu mesmo desenvolverei a web.
 
 #### 5.1.2- Viabilidade económica
 
@@ -155,13 +156,13 @@
 ### 5.2- Competencia
 
 - A nivel de nacional non existe ningunha web que rivalize con todos os servizos que aporta DanceSync xa que sendo escasas, ningunha delas combina os servizos que ofrecemos.
-- Podense considerar competencia ás empresas que desenvolven páxinas web persnalizadas, pero non tería o nivel de coñecementos nin de implicacion que ten DanceSync xa que a plataforma non so está creada como un producto, se non que etsa creada dende a perspectiva dun usuario.
+- Podense considerar competencia ás empresas que desenvolven páxinas web persnalizadas, pero non tería o nivel de coñecementos nin de implicacion que ten DanceSync xa que a plataforma non so está creada como un producto, se non que esta creada dende a perspectiva dun usuario.
 
 ### 5.3- Promoción
 
 > A promoción de DanceSync faráse mediante redes sociais e posicionamento web na súa maioria ainda que ao levar os procesos de inscripcion dos eventos deportivos entre outros, indirectamente tamén se está publicitando a plataforma.
 >
-> Estás técnicas foron elexidas pensando na importancia das redes sociais e internet en esta época na que vivimos e que forman parte da nosa vida cotidiá.
+> Estás técnicas foron elexidas pensando na importancia das redes sociais e internet en esta época na que vivimos e que forman parte da nosa vida cotiá.
 
 ## 6- Requirimentos
 
