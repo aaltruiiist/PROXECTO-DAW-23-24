@@ -67,6 +67,9 @@ Que datos recollemos?
 
 Recopilamos os datos que nos proporcionan voluntariamente cando os usuarios se rexistras na nosa plataforma, inscribe nun evento ou contacta con nós. Estes datos poden incluír o seu nome, enderezo de correo electrónico, número de teléfono, detalles de pago e outra información.
 
+
+Os datos que non esten directamente relacionados co ranking serán eliminados ao finalizar o evento. A persoa responsable dos datos recollidos e da sua proteccion sera ó administrados actual da web.
+
 ## 6- Melloras futuras
 
 > A futuro tiñamos pensado as seguintes melloras:
