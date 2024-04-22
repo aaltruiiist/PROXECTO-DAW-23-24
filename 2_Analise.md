@@ -8,7 +8,7 @@
   - [5- Normativa](#5--normativa)
   - [6- Melloras futuras](#6--melloras-futuras)
 
-> *EXPLICACION*: Este documento describe os requirimentos para "nome do proxecto" especificando que funcionalidade ofrecerá e de que xeito.
+>Este documento describe os requirimentos para DanceSync especificando que funcionalidade ofrecerá e de que xeito.
 
 ## 1- Descrición Xeral
 > DanceSync non é unha simple plataforma web; é unha comunidade de baile deportivo.
@@ -58,7 +58,7 @@
 
 ## 4- Contorno operacional
 
-> Neste caso DanceSync sera accesible dende o navegador, no que simplemente se necesitará conexión a internet
+> Neste caso DanceSync sera accesible dende o navegador, no que simplemente se necesitará conexión a internet.
 
 ## 5- Normativa
 En DanceSync entendemos que a privacidade dos datos é de suma importancia. Por este motivo, comprometémonos a cumprir todas as normas de protección de datos vixentes a nivel nacional (Lei Orgánica núm. 3/2018, do 5 de decembro, de Protección de Datos Persoais e Garantía dos Dereitos Dixitais (LOPDPGDD)). A nivel europeo (Regulamento Xeral de Protección de Datos (GDPR)).
