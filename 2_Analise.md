@@ -54,7 +54,7 @@
   Estos usuarios poden acceder a case todo os servizos da páxina, inscripción en competicions, visualizar o calendario e incluso acceder ao ranking, xa que non queriamos obligar a os deportistas a rexistrarse na plataforma.
 
 **Autenticados**
-  Os usuarios que conten con auteticacion poderan acceder ao apartado de "empleo temporal" que ofrezen os organizadores de eventos, que
+  Os usuarios que conten con autenticacion poderan acceder ao apartado de "empleo temporal" que ofrezen os organizadores de eventos.
 
 ## 4- Contorno operacional
 
