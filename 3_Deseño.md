@@ -25,9 +25,13 @@ Nun futuro substituirase o usuario administrador por un usuario de cada empresa 
 >   <img src="imagenes/ER-Eventos.png" alt="Modelo ER da base de datos Eventos" />
 >   - Usuarios:
 >   <img src="imagenes/ER-Usuarios.png" alt="Modelo ER da base de datos Usuarios" />
-> - Modelo relacional
->
-> Pódese entregar a captura do phpMyAdmin se se emprega MariaDB como Modelo relacional.
+>   - Ranking:
+>   <img src="imagenes/ER-Ranking.png" alt="Modelo ER da base de datos Ranking">
+> 
+> - Modelo relacional:
+> 
+>     
+> 
 
 ## 4- Deseño de interface de usuarios
  Neste caso centreime nos mockups da version movil xa que  actualmente a maioria de usuarios chegan dende movil, ademais a unica diferenza coa version de escritorio son as proporcións. 
