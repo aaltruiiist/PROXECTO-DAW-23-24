@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9015925dc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modulos.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+    
+    <script src="scripts/header.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/modales.js" defer></script>
+    <title>ReDance - DanceSync</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="/" class="nav-logo">
+            <img src="images/logo-invert.svg" alt="DanceSync" class="logo--img">
+          </a>
+        </div>
+        <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+              <a href="/" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+              <a href="competiciones.html" class="nav-link">Competiciones</a>
+          </li>
+          <li class="nav-item  ">
+            <a href="ranking.html" class="nav-link">Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a href="galeria.html" class="nav-link">Galería</a>
+          </li>
+          <li class="nav-item">
+              <a href="portal-empleo.html" class="nav-link">Empleo</a>
+          </li>
+          <li class="nav-item nav-item--seleccionado">
+            <a href="redance.html" class="nav-link">ReDance</a>
+        </li>
+          <li class="nav-item">
+              <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="login-ico">
+        <a href="#" class="nav-link" id="open-login-btn">
+            <i class="fas fa-circle-user"></i>
+        </a>
+    </div>
+  </nav>
+</header>
+<section class="portada">
+    <div class="portada--img">
+      <img class="banner" src="images/portada-dancesync.jpg"/>
+    </div>
+    <h1 class="titulo titulo--1"></h1>
+       
+      </div>
+    </div>
+    
+</section>
+    <div class="working--container">
+        <h2 class="titulo titulo--1">Estamos trabajando en ello</h2>
+        <div class="working--loader">
+           <video src="images/loading.mp4" alt="" autoplay loop/>
+        </div>
+        
+    </div>
+    <div id="login-modal" class="overlay">
+      <div class="modal">
+          <div class="modal-header">
+              <h2>Iniciar sesión</h2>
+              <button class="close-btn" onclick="closeModal('login-modal')">&times;</button>
+          </div>
+          <form class="form-box" id="form-log" action="" method="POST">
+              <div>
+                  <label for="username">Correo electrónico:</label>
+                  <input type="email" id="username" name="username" required>
+              </div>
+              <div>
+                  <label for="pass">Contraseña:</label>
+                  <input type="password" id="pass" name="pass" required>
+              </div>
+              <button type="submit">Iniciar sesión</button>
+          </form>
+          <div class="modal-footer">
+              <p>¿No tienes una cuenta? <a href="#" id="open-registro-modal">Regístrate aquí</a></p>
+          </div>
+      </div>
+  </div>
+  
+  <div id="registro-modal" class="overlay">
+      <div class="modal">
+          <div class="modal-header">
+              <h2>Registrarse</h2>
+              <button class="close-btn" onclick="closeModal('registro-modal')">&times;</button>
+          </div>
+          <form class="form-box" id="form-reg" action="" method="POST">
+              <div>
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+              <div>
+                  <label for="pass">Contraseña:</label>
+                  <input type="password" id="pass" name="pass" required>
+              </div>
+              <button type="submit">Registrarse</button>
+          </form>
+      </div>
+  </div>
+</body>
+</html>

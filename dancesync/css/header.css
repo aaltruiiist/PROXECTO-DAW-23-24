@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  align-items: center;
+  padding: 2rem;
+  background: transparent;
+  max-height: var(--cabecera-width);
+  justify-content: space-between;
+}
+
+header.activa {
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  padding: 0.7rem;
+}
+.nav-menu li {
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+.nav-menu li:nth-of-type(0) {
+  margin-top: 5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--color-primario);
+}
+
+.nav-item--seleccionado .nav-link {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.logo--img {
+  width: var(--logo-width);
+  height: 150px;
+}
+
+.ico i {
+  font-size: 2rem;
+}
+.login-ico {
+  display: flex;
+  align-items: center;
+}
+.login-ico i {
+  color: white;
+  font-size: 2rem;
+}
+a.nav-link.ico {
+  display: none;
+}
+@media only screen and (max-width: 1300px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .login-ico {
+   margin-left: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .sesion {
+    display: none;
+  }
+}
