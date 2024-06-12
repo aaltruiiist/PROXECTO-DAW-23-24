@@ -12,7 +12,8 @@
 
     
     <script src="scripts/header.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/competiciones.js" defer></script>
+    
     <script src="scripts/modales.js" defer></script>
 </head>
 <body>
@@ -59,11 +60,11 @@
       </nav>
     </header>
     <section class="portada">
-        <div class="portada--img">
+        <div class="portada--img">  
+          <h1 class="titulo titulo--1">Proximas competiciones</h1>
           <img class="banner" src="images/portada-dancesync.jpg"/>
         </div>
-        <h1 class="titulo titulo--1"></h1>
-           
+      
           </div>
         </div>
         
@@ -71,27 +72,14 @@
     <section class="section">
       <article class="container">
    
-        <h2 class="titulo titulo--1 font--center">Proximas competiciones:</h2>
+      
 <div class="search-bar">
-  <input type="text" placeholder="Buscar competiciones...">
+  <input type="text" name="search" id="search" placeholder="Buscar competiciones...">
+  <input type="date" name="fecha" id="calendario">
 </div>
 
-<div class="product-grid">
-  <div class="card">
-    <div class="card-content">
-      <h3>Producto 1</h3>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-content">
-      <h3>Producto 2</h3>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-content">
-      <h3>Producto 3</h3>
-    </div>
-  </div>
+<div class="eventos-grid">
+
 </div>
       
       </article>
@@ -105,7 +93,7 @@
         <div class="img-link--container">
           <a href="/galeria.html">
           <img src="images/nofoto.jpg"  alt="Avatar" class="img__link">
-          <div class="overlay">
+          <div>
               <div class="text">Galería</div>
             </div>
           </a>
@@ -114,7 +102,7 @@
         <div class="img-link--container"">
           <a href="/ranking.html">
           <img src="images/nofoto.jpg"  alt="Avatar" class="img__link">
-          <div class="overlay">
+          <div>
               <div class="text">Ranking</div>
             </div>
           </a>
@@ -153,10 +141,7 @@
           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h3>Derechos de Autor</h3>
-        <p>&copy; 2024 DanceSync. Todos los derechos reservados.</p>
-      </div>
+      
     </div>
   </footer>
   <div id="login-modal" class="overlay">
@@ -168,11 +153,11 @@
         <form class="form-box" id="form-log" action="" method="POST">
             <div>
                 <label for="username">Correo electrónico:</label>
-                <input type="email" id="username" name="username" required>
+                <input type="email" id="username" name="username">
             </div>
             <div>
                 <label for="pass">Contraseña:</label>
-                <input type="password" id="pass" name="pass" required>
+                <input type="password" id="pass" name="pass" >
             </div>
             <button type="submit">Iniciar sesión</button>
         </form>
@@ -191,22 +176,25 @@
         <form class="form-box" id="form-reg" action="" method="POST">
             <div>
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre">
             </div>
             <div>
               <label for="apellidos">Apellidos:</label>
-              <input type="text" id="apellidos" name="apellidos" required>
+              <input type="text" id="apellidos" name="apellidos">
           </div>
             <div>
                 <label for="pass">Contraseña:</label>
-                <input type="password" id="pass" name="pass" required>
+                <input type="password" id="pass-reg" name="pass">
             </div>
             <button type="submit">Registrarse</button>
         </form>
+        <div class="modal-footer">
+          <p>¿Algún problema con el registro? <a href="contacto.html"> Contacta con nosotros</a></p>
+      </div>
     </div>
 </div>
 

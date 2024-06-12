@@ -1,0 +1,90 @@
+.container--informacion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 10px;
+    padding: var(--padding-v) var(--padding-h);
+}
+
+.container--informacion-1 {
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container--informacion-2 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 0 auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.info-horario {
+    background-color: var(--blanco);
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.horario {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horario li {
+    margin-bottom: 10px;
+    font-size: var(--font-s);
+    color: var(--negro);
+}
+
+.strong {
+    font-weight: var(--bold2);
+    color: var(--color-primario);
+}
+
+.info-item {
+    margin-bottom: 15px;
+    background-color: var(--blanco); 
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--negro);
+    width: 100%;
+    max-width: 600px;
+}
+
+.info-item h3 {
+    font-family: var(--font2);
+    font-size: var(--font-s); 
+    color: var(--color-primario);
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-family: var(--font1);
+    font-size: var(--font-s); 
+    color: var(--negro);
+}
+
+@media (max-width: 768px) {
+    .container--informacion-1,
+    .container--informacion-2 {
+        flex: 1 1 100%;
+    }
+
+    .container--informacion-2 {
+        grid-template-columns: 1fr;
+    }
+}

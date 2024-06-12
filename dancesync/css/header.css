@@ -1,12 +1,12 @@
 .header {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 2;
   width: 100vw;
   align-items: center;
   padding: 2rem;
-  background: transparent;
+  background: black;
   max-height: var(--cabecera-width);
   justify-content: space-between;
 }
@@ -76,7 +76,13 @@ header.activa {
 
 .logo--img {
   width: var(--logo-width);
+}
+
+.logo img {
+  object-fit: contain;
+  
   height: 150px;
+  
 }
 
 .ico i {

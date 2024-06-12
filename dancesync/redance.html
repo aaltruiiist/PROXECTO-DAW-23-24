@@ -11,7 +11,7 @@
 
     
     <script src="scripts/header.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="scripts/modales.js" defer></script>
     <title>ReDance - DanceSync</title>
 
@@ -77,54 +77,58 @@
         
     </div>
     <div id="login-modal" class="overlay">
-      <div class="modal">
-          <div class="modal-header">
-              <h2>Iniciar sesión</h2>
-              <button class="close-btn" onclick="closeModal('login-modal')">&times;</button>
-          </div>
-          <form class="form-box" id="form-log" action="" method="POST">
-              <div>
-                  <label for="username">Correo electrónico:</label>
-                  <input type="email" id="username" name="username" required>
-              </div>
-              <div>
-                  <label for="pass">Contraseña:</label>
-                  <input type="password" id="pass" name="pass" required>
-              </div>
-              <button type="submit">Iniciar sesión</button>
-          </form>
-          <div class="modal-footer">
-              <p>¿No tienes una cuenta? <a href="#" id="open-registro-modal">Regístrate aquí</a></p>
-          </div>
-      </div>
-  </div>
-  
-  <div id="registro-modal" class="overlay">
-      <div class="modal">
-          <div class="modal-header">
-              <h2>Registrarse</h2>
-              <button class="close-btn" onclick="closeModal('registro-modal')">&times;</button>
-          </div>
-          <form class="form-box" id="form-reg" action="" method="POST">
-              <div>
-                  <label for="email">Correo electrónico:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" required>
-              </div>
-              <div>
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Iniciar sesión</h2>
+                <button class="close-btn" onclick="closeModal('login-modal')">&times;</button>
             </div>
-              <div>
-                  <label for="pass">Contraseña:</label>
-                  <input type="password" id="pass" name="pass" required>
+            <form class="form-box" id="form-log" action="" method="POST">
+                <div>
+                    <label for="username">Correo electrónico:</label>
+                    <input type="email" id="username" name="username">
+                </div>
+                <div>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass" >
+                </div>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <div class="modal-footer">
+                <p>¿No tienes una cuenta? <a href="#" id="open-registro-modal">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="registro-modal" class="overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Registrarse</h2>
+                <button class="close-btn" onclick="closeModal('registro-modal')">&times;</button>
+            </div>
+            <form class="form-box" id="form-reg" action="" method="POST">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                  <label for="apellidos">Apellidos:</label>
+                  <input type="text" id="apellidos" name="apellidos">
               </div>
-              <button type="submit">Registrarse</button>
-          </form>
-      </div>
-  </div>
+                <div>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass-reg" name="pass">
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+            <div class="modal-footer">
+              <p>¿Algún problema con el registro? <a href="contacto.html"> Contacta con nosotros</a></p>
+          </div>
+        </div>
+    </div>
+    
 </body>
 </html>

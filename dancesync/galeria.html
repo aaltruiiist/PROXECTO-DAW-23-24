@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/modulos.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/modales.js" defer></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
     
-    <script src="scripts/header.js" defer></script>
-     
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/modales.js" defer></script>
+
   </head>
 <body>
     <header class="header">
@@ -61,46 +62,20 @@
     </header>
     <section class="portada">
       <div class="portada--img">
-        <h1 class="titulo titulo--1">Proximas competiciones</h1>
+        <h1 class="titulo titulo--1">Galería de imagenes</h1>
           <img class="banner" src="images/portada-dancesync.jpg"/>
-          <div class="cuadros-container">
-              <div class="cuadro"></div>
-              <div class="cuadro"></div>
-              <div class="cuadro"></div>
-              <div class="cuadro"></div>
-          </div>
       </div>
   </section>
   
+  <section class="section section--galeria">
+    <article class="container">
+      
+</article>
+  </section>
   
         
-    </section>
-    <section class="section">
-      <article class="container">
-        <div class="dual">
-          <div class="dual__item dual__item--txt">
-            <div class="dual__inner">
-                <h2 class="titulo titulo--2">
-                  Titulo de la seccion
-              </h2>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend justo ac neque convallis, in molestie magna imperdiet. Sed ut magna erat. Sed at erat eget sapien hendrerit cursus. Donec nunc arcu, varius in lacinia in, condimentum nec velit. Nam eget rhoncus ligula. Mauris pellentesque nulla nulla, nec iaculis nulla ultricies id. Mauris rutrum nulla sit amet augue egestas venenatis. In quam libero, mollis at ligula quis, lobortis molestie arcu. Morbi mi tortor, faucibus a sapien ac, ultricies ornare ligula. Maecenas eget velit eu felis dictum sodales. In placerat pharetra mauris, varius dictum diam laoreet eget.
-              </p>
-              <p>
-                  Fusce laoreet augue eget mollis consequat. Quisque in ligula hendrerit, accumsan lectus sit amet, maximus orci. Donec convallis aliquam dui, non lobortis enim blandit eget. Ut sit amet aliquet ligula, a mattis urna. Nam ac rhoncus augue. Nunc rutrum arcu justo, quis scelerisque tortor volutpat at. Sed purus arcu, placerat ac ante in, suscipit efficitur lacus. Fusce scelerisque eu mauris nec maximus. Mauris tristique.
-              </p>
-          </div>
-          
-          </div>
-          <div class="dual__item dual__item--img ">
-            <div class="dual__inner">
-              <img loading="lazy" src="images/nofoto.jpg" class="img-cover" alt="">
-            </div>
-          </div>
-        </div>
-      
-      </article>
-  </section>
+
+
 
   <section class="section">
     <article class="container">
@@ -108,10 +83,10 @@
       <h2 class="titulo titulo--2 font--center">Título de la segunda sección</h2>
       <div class="img-links">
         <div class="img-link--container">
-          <a href="/galeria.html">
+          <a href="/competiciones.html">
           <img src="images/nofoto.jpg"  alt="Avatar" class="img__link">
           <div>
-              <div class="text">Galería</div>
+              <div class="text">Competiciones</div>
             </div>
           </a>
         </div>
@@ -128,7 +103,19 @@
     </article>
         
   </section>
-
+  
+  <section class="section section--contacto">
+      <article class="container">
+        <div class="contacto">
+  
+              <h2 class="titulo font--blanco">4- Vestibulum et vestibulum magna</h2>
+              <p>Aenean molestie libero quam, id dictum risus posuere eget. Curabitur a quam quis quam suscipit tempor scelerisque ac felis. Sed eu sollicitudin tortor. Aenean molestie libero quam, id dictum risus posuere eget.</p>
+        
+              <p><a class="boton"><span>Contactar</span> <i class="fa-solid fa-long-arrow-right"></i></a></p>
+          </div>
+      </div>
+      </article>
+  </section>
   
   <footer class="footer">
     <div class="footer-content">
@@ -201,7 +188,11 @@
       </div>
     </div>
 </div>
+<script src="scripts/lightgallery.min.js"></script>
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'))
+</script>
+
 
 </body>
-
 </html>

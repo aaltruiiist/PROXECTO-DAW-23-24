@@ -8,6 +8,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $password = $_POST["pass"];
 
+
+    if (empty($nombre) || empty($apellidos) || empty($email) || empty($password)) {
+        echo "Todos los campos son obligatorios.";
+        exit;
+    }
+
+   
+    if (!preg_match("/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/", $nombre)) {
+        echo "El nombre solo puede contener letras.";
+        exit;
+    }
+
+    if (!preg_match("/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/", $apellidos)) {
+        echo "Los apellidos solo pueden contener letras.";
+        exit;
+    }
+
+    
+    if (strlen($password) < 8) {
+        echo "La contraseña debe tener al menos 8 caracteres.";
+        exit;
+    }
+
     $nombre = stripslashes($nombre);
     $apellidos = stripslashes($apellidos);
     $email = stripslashes($email);

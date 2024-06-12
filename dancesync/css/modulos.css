@@ -131,25 +131,54 @@ BANDA CONTACTO - fondo y texto
 }
 
 /*CARDS Y COMPETICIONES*/
+
 .search-bar {
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--blanco);
 }
 
 .search-bar input[type="text"] {
+  flex: 3;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search-bar input[type="date"] {
   flex: 1;
   padding: 1rem;
   font-size: 1.5rem;
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 0.5rem;
 }
 
+.search-bar input[type="text"]::placeholder,
+.search-bar input[type="date"]::placeholder {
+  color: #999;
+}
 
-.product-grid {
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar input[type="date"] {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+.eventos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   gap: 2rem;
   margin-top: 20px;
 }
@@ -158,16 +187,18 @@ BANDA CONTACTO - fondo y texto
   background-color: var(--blanco);
   border: 1px solid #ddd;
   border-radius: 0.5rem;
+  
   padding: 2rem;
   text-align: center;
 }
 
 .card-content {
-  background-image: url('ruta/a/tu/imagen.jpg');
+  background-color: white;
   background-size: cover;
-  height: 20rem;
+  height: 10rem;
   border-radius: 0.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -178,8 +209,9 @@ BANDA CONTACTO - fondo y texto
 }
 
 
+
 @media (max-width: 768px) {
-  .product-grid {
+  .eventos-grid {
     grid-template-columns: 1fr;
   }
   .card-content {
@@ -198,6 +230,8 @@ BANDA CONTACTO - fondo y texto
     font-size: 1rem;
   }
 }
+
+
 
 /****************
   WORKING PROGRESS
