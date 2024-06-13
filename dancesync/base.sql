@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2024 a las 01:39:08
+-- Tiempo de generación: 13-06-2024 a las 17:03:11
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -18,18 +18,18 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `proyecto`
+-- Base de datos: `dancesync`
 --
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `empresas`
---
 
 CREATE DATABASE dancesync;
 
-USE dancesync;
+use dancesync;
+--
+-- Estructura de tabla para la tabla `empresas`
+--
 
 CREATE TABLE `empresas` (
   `ID_Empresa` int(11) NOT NULL,
@@ -43,11 +43,11 @@ CREATE TABLE `empresas` (
 --
 
 INSERT INTO `empresas` (`ID_Empresa`, `Nombre`, `Contacto`, `Pagos`) VALUES
-(1, 'CBD BTroula', 'contacto@dancesync.es', ''),
-(2, 'CBD Alma Studio', 'info@baileyalmastudio.com', ''),
-(3, 'CBD Pasos', 'contacto@pasosdefuego.com', ''),
-(4, 'CBD Ritmo Academy', 'info@ritmoandsabor.com', ''),
-(5, 'Euforia Dance Center', 'contacto@euforiadancecenter.com', '');
+(1, 'CBD BTroula', 'contacto@dancesync.es', 'IBAN11111'),
+(2, 'CBD Alma Studio', 'info@baileyalmastudio.com', 'IBAN22222'),
+(3, 'CBD Pasos', 'contacto@pasos.com', 'IBAN33333'),
+(4, 'CBD Ritmo Academy', 'info@ritmoacademy.com', 'IBAN44444'),
+(5, 'Euforia Dance Center', 'contacto@euforiadancecenter.com', 'IBAN55555');
 
 -- --------------------------------------------------------
 
@@ -73,7 +73,7 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`ID_Evento`, `Nombre`, `Fecha`, `Localizacion`, `Director`, `Secretario`, `Escrutinio`, `Licencia_DJ`, `Pista`, `Finalizado`) VALUES
-(1, 'Atlantic Open Marín 2024', '2024-07-09', 'Pavillón Municipal de A Raña\r\nRúa Recamán, 26, 36915 Marín, Pontevedra', 'Javier Gómez Herrera', 'Mateo Castro Navarro', 'FEBD', 'Andrés Paz', '27x17', 1),
+(1, 'Atlantic Open Marín 2024', '2024-06-09', 'Pavillón Municipal de A Raña\r\nRúa Recamán, 26, 36915 Marín, Pontevedra', 'Javier Gómez Herrera', 'Mateo Castro Navarro', 'FEBD', 'Andrés Paz', '27x17', 1),
 (2, 'Circuito Ibérico 2024', '2024-08-06', 'R. Canónigo Valiño, s/n, 36700 Tui, Pontevedra', 'Laura Fernández Martínez', 'Andrés López García', 'FEBD', 'Sonia Castro', '30x20', 0),
 (3, 'Torneo Internacional Vigo 2024', '2024-09-12', 'Complejo Deportivo As Travesas\r\nAv. de Castrelos, 1, 36210 Vigo, Pontevedra', 'Carla Rodríguez Pérez', 'Martín Sánchez Torres', 'FEBD', 'Antón Silva', '28x18', 0),
 (4, 'Campeonato Gallego Santiago 2024', '2024-10-15', 'Estadio Multiusos de San Lázaro\r\nAv. Fernando de Casas Novoa, s/n, 15703 Santiago de Compostela, A Coruña', 'Sofía Morales Díaz', 'Javier Gómez Herrera', 'FEBD', 'Anxo Pérez', '29x19', 0),
@@ -102,17 +102,6 @@ INSERT INTO `eventos_empresa` (`ID_Evento`, `ID_Empresa`) VALUES
 (4, 4),
 (5, 5),
 (6, 1);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `eventos_parejas`
---
-
-CREATE TABLE `eventos_parejas` (
-  `ID_Participante` int(11) NOT NULL,
-  `ID_Evento` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -161,6 +150,7 @@ CREATE TABLE `participantes_coreografica` (
   `Email` varchar(255) NOT NULL,
   `Club` varchar(255) NOT NULL,
   `Cat_Edad` varchar(255) NOT NULL,
+  `Categoria` varchar(255) NOT NULL,
   `Cancion` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -179,7 +169,8 @@ CREATE TABLE `participantes_parejas` (
   `Email` varchar(255) NOT NULL,
   `Club` varchar(255) NOT NULL,
   `Cat_Edad` varchar(255) NOT NULL,
-  `Modalidades` varchar(255) NOT NULL
+  `Cat_Standard` varchar(255) NOT NULL,
+  `Cat_Latinos` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -196,7 +187,8 @@ CREATE TABLE `participantes_single` (
   `Email` varchar(255) NOT NULL,
   `Club` varchar(255) NOT NULL,
   `Cat_Edad` varchar(255) NOT NULL,
-  `Modalidades` varchar(255) NOT NULL
+  `Cat_Standard` varchar(255) NOT NULL,
+  `Cat_Latinos` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------

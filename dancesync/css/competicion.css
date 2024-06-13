@@ -1,90 +1,185 @@
 .container--informacion {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    gap: 10px;
-    padding: var(--padding-v) var(--padding-h);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  gap: 10px;
 }
 
 .container--informacion-1 {
-    flex: 1 1 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  flex: 1 1 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .container--informacion-2 {
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 0 auto;
-    text-align: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  grid-gap: 10px;
+  text-align: center;
+  justify-items: center;
 }
 
 .info-horario {
-    background-color: var(--blanco);
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+  background-color: var(--blanco);
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
 }
 
 .horario {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .horario li {
-    margin-bottom: 10px;
-    font-size: var(--font-s);
-    color: var(--negro);
+  margin-bottom: 10px;
+  font-size: var(--font-s);
+  color: var(--negro);
 }
 
 .strong {
-    font-weight: var(--bold2);
-    color: var(--color-primario);
+  font-weight: var(--bold2);
+  color: var(--color-primario);
 }
 
 .info-item {
-    margin-bottom: 15px;
-    background-color: var(--blanco); 
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--negro);
-    width: 100%;
-    max-width: 600px;
+  margin-bottom: 15px;
+  background-color: var(--blanco);
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--negro);
+  width: 100%;
+  max-width: 600px;
 }
 
 .info-item h3 {
-    font-family: var(--font2);
-    font-size: var(--font-s); 
-    color: var(--color-primario);
-    margin-bottom: 5px;
+  font-family: var(--font2);
+  font-size: var(--font-s);
+  color: var(--color-primario);
+  margin-bottom: 5px;
 }
 
 .info-item p {
-    font-family: var(--font1);
-    font-size: var(--font-s); 
-    color: var(--negro);
+  font-family: var(--font1);
+  font-size: var(--font-s);
+  color: var(--negro);
+}
+
+.section--bg {
+  background-image: url(../images/publico.jpg);
+  background-position: 50% 40%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section--precios .container {
+  display: flex;
+  color: var(--blanco);
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.metodos-pago,
+.precios--participantes {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.section--bg .titulo {
+  font-weight: var(--bold2);
+}
+.cursiva {
+  color: red;
+  font-weight: 700;
+  padding-top: 25px;
+  font-style: italic;
+}
+
+.precios li {
+  padding: 16px;
+}
+.section--bg .precios--publico {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: var(--blanco);
+  font-weight: var(--bold1);
+}
+
+/*LISTA BAILES*/
+.bailes-lista {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+
+  text-align: center;
+}
+
+.bailes-categoria {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 70vw;
+  background-color: rgba(12, 12, 12, 0.75);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bailes-item {
+  font-size: var(--font-xs);
+  color: var(--blanco);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.bailes-item:last-child {
+  border-bottom: none;
+}
+
+.titulo--2,
+.titulo--3 {
+  text-align: center;
+}
+
+.section--bailes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../images/bailes.jpg);
+  background-size: cover;
+  color: var(--blanco);
+  padding: var(--padding-v) var(--padding-h);
 }
 
 @media (max-width: 768px) {
-    .container--informacion-1,
-    .container--informacion-2 {
-        flex: 1 1 100%;
-    }
+  .container--informacion-1,
+  .container--informacion-2 {
+    flex: 1 1 100%;
+  }
 
-    .container--informacion-2 {
-        grid-template-columns: 1fr;
-    }
+  .container--informacion-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section--precios .container {
+    flex-direction: column;
+  }
+  .section--bg {
+    flex-direction: column;
+  }
 }

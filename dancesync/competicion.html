@@ -9,13 +9,11 @@
       window.onload = function() {
       
           const eventoString = localStorage.getItem('evento');
-          console.log('Datos de evento recuperados:', eventoString);
+      
           
           if (eventoString) { 
               const evento = JSON.parse(eventoString)[0]; 
-              console.log('Evento parseado:', evento);
-              console.log('ID del evento:', evento.ID_Evento);
-             
+              document.querySelectorAll('.id_evento').forEach(el=>el.value=`${evento.ID_Evento}`)
               document.getElementById('eventoNombre').textContent = `${evento.Nombre}`;
               document.getElementById('eventoFecha').textContent = ` ${evento.Fecha}`;
               document.getElementById('eventoLugar').textContent = ` ${evento.Localizacion}`;
@@ -25,6 +23,9 @@
               document.getElementById('eventoEscrutinio').textContent = ` ${evento.Escrutinio}`;
               document.getElementById('eventoLicencia').textContent = ` ${evento.Licencia_DJ}`;
               document.getElementById('eventoPista').textContent = ` ${evento.Pista}`;
+              document.querySelectorAll('.numero_iban').forEach(el=>el.value=`${evento.Pagos}`)
+              document.querySelectorAll('.beneficiario').forEach(el=>el.value=`${evento.Organizador}`)
+              document.querySelectorAll('.nombre_evento').forEach(el=>el.value=`${evento.Nombre}`)
               
           } else {
               console.log('No se encontraron datos de evento en localStorage');
@@ -88,7 +89,7 @@
     <section class="portada">
       <div class="portada--img">
         <h1 class="titulo titulo--1" id="eventoNombre"></h1>
-          <img class="banner" src="images/portada-dancesync.jpg"/>
+          <img class="banner" src="images/portada-dancesync.jpg" alt="Portada DanceSync"/>
       </div>
   </section>
   
@@ -141,9 +142,313 @@
             </div>
           </article>
     </section>
+<section class="section section--bg">
+  <h3 class="titulo titulo--1 font--blanco">PÚBLICO</h3>
+  <ul class="precios--publico">
+    <li><span class="strong">8€</span> – General</li>
+    <li><span class="strong">Gratis</span> – Menores 12 años</li>
+</ul>
+</section>
+<section class="section section--precios">
+  <article class="container">
+      <div class="precios--participantes">
+        <h3 class="titulo titulo--3 font--negro">PRECIOS PARTICIPANTES</h3>
+        <ul class="precios">
+          <li><span class="strong">30€</span> – Competición nacional (Parejas)</li>
+          <li><span class="strong">60€</span> – Danza Coreográfica</li>
+          <li><span class="strong">20€</span> – Single</li>
+        </ul>
+      </div>
+      <div class="metodos-pago">
+        <h3 class="titulo titulo--3 font--negro">MÉTODO DE PAGO</h3>
+        <ul class="metodos">
+          <li>
+            <span class="strong">Online</span>
+            <p class="descripcion">Paga de manera segura en línea utilizando tarjeta de crédito o débito.</p>
+        </li>
+        <li>
+            <span class="strong">Transferencia</span>
+            <p class="descripcion">Realiza una transferencia bancaria. Recibirás los detalles de la cuenta por correo electrónico.</p>
+        </li>
+        <li>
+            <span class="strong">Efectivo</span>
+            <p class="descripcion">Paga en efectivo al llegar a la competición.</p>
+        </li>
+    </ul>
 
+        <p class="cursiva">*Se debe mostrar justificante de pago en la entrada de competicion si no se paga en efectivo</p>
+      </div>
+  </article>
+</section>
+<section class="section section--bailes">
+  <article class="container">
+    <ul class="bailes-lista">
+      <li class="bailes-categoria" style="margin-bottom: 2rem;">
+        <h3 class="titulo titulo--3">Standard</h3>
+        <ul>
+          <li class="bailes-item">Single F – Vals Lento | Tango | Quickstep (Juvenil I – Vals Lento | Quickstep)</li>
+          <li class="bailes-item">Single 2ª Ter / 1ª Ter Junior I – Vals Lento | Tango | Quickstep</li>
+          <li class="bailes-item">Single 1ª Ter – Vals Lento | Vals Vienés | Quick</li>
+          <li class="bailes-item">H – Vals Lento | Tango</li>
+          <li class="bailes-item">G – Tango | Quick</li>
+          <li class="bailes-item">F – Vals Lento | Tango | Quickstep (Juvenil I – Vals Lento | Quickstep)</li>
+          <li class="bailes-item">1ª Territorial – Vals Lento | Vals Vienés | Quick</li>
+          <li class="bailes-item">C / B – Tango | Vals Vienés | Slow Fox | Quick</li>
+          <li class="bailes-item">AN / AI – 5 Bailes</li>
+        </ul>
+      </li>
+      <li class="bailes-categoria">
+        <h3 class="titulo titulo--3">Latinos</h3>
+        <ul>
+          <li class="bailes-item">Single F – Samba | Cha-cha | Jive (Juvenil I – Samba | Cha-cha)</li>
+          <li class="bailes-item">Single 2ª Ter / 1ª Ter Junior I – Samba | Cha-cha | Jive</li>
+          <li class="bailes-item">Single 1ª Ter – Samba | Rumba | Jive</li>
+          <li class="bailes-item">H – Samba | Cha-cha</li>
+          <li class="bailes-item">G – Samba | Jive</li>
+          <li class="bailes-item">F – Samba | Cha-cha | Jive (Juvenil I – Samba | Cha-cha)</li>
+          <li class="bailes-item">1ª Territorial – Samba | Rumba | Jive</li>
+          <li class="bailes-item">C / B – Samba | Cha-cha | Rumba | Paso</li>
+          <li class="bailes-item">AN / AI – 5 Bailes</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+</section>
 
-  <section class="section">
+<section class="section section--formularios">
+  <article class="container">
+    <div class="formularios-container">
+      <form class="form-box" id="form--coreo" action="" method="post">
+        <h3 class="titulo titulo--3">Inscripción Coreográfica</h3>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="nombre_coreo">Nombre Grupo:</label>
+            <input type="text" id="nombre_coreo" name="datos_grupo" >
+          </div>
+          <div class="form-group">
+            <label for="poblacion_coreo">Población:</label>
+            <input type="text" id="poblacion_coreo" name="poblacion" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="telefono_coreo">Teléfono:</label>
+            <input type="text" id="telefono_coreo" name="telefono" >
+          </div>
+          <div class="form-group">
+            <label for="email_coreo">Email:</label>
+            <input type="email" id="email_coreo" name="email" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="club">Club:</label>
+            <input type="text" id="club" name="club" >
+          </div>
+          <div class="form-group">
+            <label for="cat_edad">Categoría de Edad:</label>
+            <select id="cat_edad" name="cat_edad" >
+              <option value="Seleccione una categoría">Seleccione una categoría</option>
+              <option value="Combi">Combi</option>
+              <option value="Juvenil">Juvenil</option>
+              <option value="Junior">Junior</option>
+              <option value="Youth">Youth</option>
+              <option value="Absoluta">Absoluta</option>
+              <option value="Senior">Senior</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cat_coreo">Categoría:</label>
+              <select id="cat_coreo" name="mod_coreo" >
+                <option value="Seleccione una categoría">Seleccione una categoría</option>
+                <option value="Duo Sincro">Duo Sincro</option>
+                <option value="Territorial Iniciados">Territorial Iniciados</option>
+                <option value="Territorial Avanzados">Territorial Avanzados</option>
+              <option value="Nacional">Nacional</option>
+              <option value="Internacional">Internacional</option>
+                </select>
+            </div>
+        </div>
+        <p style="color: red; font-style: italic; font-weight: 600;">*Envíe su cancion respondiendo al correo que le llegará al completar la inscripción</p>
+        <input type="hidden" class="numero_iban" name="numero_iban">
+        <input  type="hidden" class="beneficiario" name="beneficiario">
+        <input  type="hidden" class="id_evento" name="id_evento">
+        <input  type="hidden" class="nombre_evento" name="nombre_evento">
+        <input type="submit" value="Enviar">
+      </form>
+      <form class="form-box" id="form--parejas" action="" method="post">
+        <h3 class="titulo titulo--3">Inscripción Parejas</h3>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="datos_hombre">Datos Hombre:</label>
+            <input type="text" id="datos_hombre" name="datos_hombre" >
+          </div>
+          <div class="form-group">
+            <label for="datos_mujer">Datos Mujer:</label>
+            <input type="text" id="datos_mujer" name="datos_mujer" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="poblacion_parejas">Población:</label>
+            <input type="text" id="poblacion_parejas" name="poblacion" >
+          </div>
+          <div class="form-group">
+            <label for="telefono_parejas">Teléfono:</label>
+            <input type="text" id="telefono_parejas" name="telefono" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="email_parejas">Email:</label>
+            <input type="email" id="email_parejas" name="email" >
+          </div>
+          <div class="form-group">
+            <label for="club_parejas">Club:</label>
+            <input type="text" id="club_parejas" name="club" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="cat_edad_parejas">Categoría de Edad:</label>
+            <select id="cat_edad_parejas" name="cat_edad" >
+              <option value="No participo">No participo</option>
+              <option value="Juvenil">Juvenil</option>
+              <option value="Junior I">Junior I</option>
+              <option value="Junior II">Junior II</option>
+              <option value="Youth">Youth</option>
+              <option value="Adulto I">Adulto I</option>
+              <option value="Adulto II">Adulto II</option>
+              <option value="Senior I">Senior I</option>
+              <option value="Senior II">Senior II</option>
+              <option value="Senior III">Senior III</option>
+              <option value="Senior IV">Senior IV</option>
+            </select>
+          </div>
+          <div class="form-group">
+          <label for="cat_mod_standard_parejas">Categoría Standard:</label>
+            <select id="cat_mod_standard_parejas" name="mod_standard" >
+              <option value="">No participo</option>
+              <option value="H">H</option>
+              <option value="G">G</option>
+              <option value="F">F</option>
+              <option value="2ª Territorial(E)">2ª Territorial(E)</option>
+              <option value="1ª Territorial(D)">1ª Territorial(D)</option>
+              <option value="C">C</option>
+              <option value="B">B</option>
+              <option value="AN">AN</option>
+              <option value="AI">AI</option>
+            </select>
+          </div>
+            <div class="form-group">
+
+              <label for="cat_mod_latinos_parejas">Categoría Latinos:</label>
+            <select id="cat_mod_latinos_parejas" name="mod_latinos" >
+              <option value="No participo">No participo</option>
+            <option value="H">H</option>
+          <option value="G">G</option>
+        <option value="F">F</option>
+      <option value="2ª Territorial(E)">2ª Territorial(E)</option>
+        <option value="1ª Territorial(D)">1ª Territorial(D)</option>
+            <option value="C">C</option>
+          <option value="B">B</option>
+        <option value="AN">AN</option>
+      <option value="AI">AI</option>
+    </select>
+  </div>
+</div>
+  <input  type="hidden" class="nombre_evento" name="nombre_evento">
+<input type="hidden" class="numero_iban" name="numero_iban">
+<input  type="hidden" class="id_evento" name="id_evento">
+        <input  type="hidden" class="beneficiario" name="beneficiario">
+        <input type="submit" value="Enviar">
+      </form>
+      <form class="form-box" id="form--single" action="" method="post">
+        <h3 class="titulo titulo--3">Inscripción Single</h3>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="datos_single">Datos Participante:</label>
+            <input type="text" id="datos_single" name="datos_participante" >
+          </div>
+          <div class="form-group">
+            <label for="poblacion_single">Población:</label>
+            <input type="text" id="poblacion_single" name="poblacion" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="telefono_single">Teléfono:</label>
+            <input type="text" id="telefono_single" name="telefono" >
+          </div>
+          <div class="form-group">
+            <label for="email_single">Email:</label>
+            <input type="email" id="email_single" name="email" >
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-group">
+            <label for="club_single">Club:</label>
+            <input type="text" id="club_single" name="club" >
+          </div>
+          <div class="form-group">
+            <label for="cat_edad_single">Categoría de Edad:</label>
+            <select id="cat_edad_single" name="cat_edad" >
+              <option value="">Seleccione una categoría</option>
+              <option value="Juvenil">Juvenil</option>
+              <option value="Junior I">Junior I</option>
+              <option value="Junior II">Junior II</option>
+              <option value="Youth">Youth</option>
+              <option value="Adulto I">Adulto I</option>
+              <option value="Adulto II">Adulto II</option>
+              <option value="Senior I">Senior I</option>
+              <option value="Senior II">Senior II</option>
+              <option value="Senior III">Senior III</option>
+              <option value="Senior IV">Senior IV</option>
+            </select>
+          </div>
+            <div class="form-group">
+            <label for="cat_mod_standard_single">Categoría Standard:</label>
+            <select id="cat_mod_standard_single"name="mod_standard" >
+              <option value="">No participo</option>
+              <option value="H">H</option>
+              <option value="G">G</option>
+              <option value="F">F</option>
+              <option value="2ª Territorial(E)">2ª Territorial(E)</option>
+              <option value="1ª Territorial(D)">1ª Territorial(D)</option>
+              <option value="C">C</option>
+              <option value="B">B</option>
+              <option value="AN">AN</option>
+              <option value="AI">AI</option>
+            </select>
+          </div>
+            <div class="form-group">
+
+              <label for="cat_mod_latinos_single">Categoría Latinos:</label>
+            <select id="cat_mod_latinos_single" name="mod_latinos" >
+                <option value="">No participo</option>
+               <option value="H">H</option>
+          <option value="G">G</option>
+              <option value="F">F</option>
+      <option value="2ª Territorial(E)">2ª Territorial(E)</option>
+    <option value="1ª Territorial(D)">1ª Territorial(D)</option>
+  <option value="C">C</option>
+<option value="B">B</option>
+<option value="AN">AN</option>
+<option value="AI">AI</option>
+</select>
+</div>
+        </div>
+        <input  type="hidden" class="nombre_evento" name="nombre_evento">
+        <input type="hidden" class="numero_iban" name="numero_iban">
+        <input  type="hidden" class="beneficiario" name="beneficiario">
+        <input  type="hidden" class="id_evento" name="id_evento">
+        <input type="submit" value="Enviar">
+      </form>
+      
+</article> 
+
+</section>
+<section class="section">
     <article class="container">
 
       <h2 class="titulo titulo--2 font--center">Título de la segunda sección</h2>
@@ -179,7 +484,6 @@
         
               <p><a class="boton"><span>Contactar</span> <i class="fa-solid fa-long-arrow-right"></i></a></p>
           </div>
-      </div>
       </article>
   </section>
   
@@ -254,6 +558,9 @@
       </div>
     </div>
 </div>
+<script src="scripts/inscripcion.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </body>
 

@@ -9,7 +9,7 @@
   padding: 0;
 }
 :root {
-  --font-size: 1rem;
+  --font-size: 1.01rem;
   --ratio: 1.125;
   --line-height: 1.5;
   --font-xs: calc(var(--font-size) / var(--ratio));
@@ -70,7 +70,7 @@
 html {
   font-family: var(--font1);
   color: var(--font-color);
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
@@ -103,6 +103,11 @@ p {
 
   top: 0;
 }
+
+.portada--img .titulo {
+  text-align: center;
+  text-shadow: 3px 3px black;
+}
 .font--center {
   text-align: center;
 }
@@ -124,13 +129,7 @@ p {
   padding: var(--padding-v) var(--padding-h);
 }
 
-.font--primario {
-  color: var(--color-primario);
-}
 
-.font--blanco {
-  color: var(--blanco);
-}
 
 
 /* TITULOS */
@@ -156,8 +155,6 @@ p {
 .titulo--3 {
   font-family: var(--font2);
   font-size: var(--font-l);
-
-  color: var(--primary);
   color: var(--color-primario);
 }
 .titulo--4 {
@@ -166,6 +163,20 @@ p {
   font-weight: var(--bold1);
   color: var(--color-primario);
 }
+
+/* MODIFICADORES */
+.font--primario {
+  color: var(--color-primario);
+}
+
+.font--blanco {
+  color: var(--blanco);
+}
+
+.font--negro {
+  color: var(--negro);
+}
+
 
 /* botones */
 
@@ -320,7 +331,7 @@ p {
 
 @media (max-width: 1024px) {
   .portada--img {
-    height: 135vh;
+    height: 100vh;
   }
 
 

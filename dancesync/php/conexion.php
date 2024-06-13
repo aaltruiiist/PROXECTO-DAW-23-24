@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $usuario = "root";
-$base = "proyecto";
+$base = "dancesync";
 
 $conexionBD = new mysqli($server, $usuario, "", $base);
 

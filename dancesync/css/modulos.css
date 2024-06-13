@@ -120,15 +120,6 @@ ENLACES IMAGEN - foto link
 BANDA CONTACTO - fondo y texto
 *******************************/
 
-.section--contacto {
-    background-color: var(--color-primario);
-    padding: 50px;
-    text-align: center;
-}
-
-.section--contacto .container {
-  max-width: 900px;
-}
 
 /*CARDS Y COMPETICIONES*/
 
