@@ -25,4 +25,4 @@ En cambio utilizaronse novas librerias como EmailJS e Lightgallery.
 
 ## 4- Probas
 
-As probas foron xurdindo durante o propio desenvolvemento do mismo, cando se implementaba unha nova funcion, probabase todos os erros posibles ata o seu correcto funcionamiento. Como insercion de datos erroneos, intentar isnerir campos vacios etc,
+As probas foron xurdindo durante o propio desenvolvemento do mismo, cando se implementaba unha nova funcion, probabase todos os erros posibles ata o seu correcto funcionamiento. Como insercion de datos erroneos, intentar isnerir campos vacios etc.
