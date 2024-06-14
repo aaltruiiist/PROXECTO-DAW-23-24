@@ -1,0 +1,45 @@
+.section--galeria {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#lightgallery a {
+    margin: 3px;
+    flex: 1 0 calc(25% - 20px); 
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#lightgallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#lightgallery a:hover img {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    #lightgallery {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #lightgallery a {
+        flex: 1 0 100%; 
+        margin:2px 0; 
+    }
+}

@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="css/modulos.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/lg-thumbnail.css">
+    <link rel="stylesheet" href="css/galeria.css">
+
     <script src="scripts/header.js" defer></script>
     <script src="scripts/modales.js" defer></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="scripts/lg-thumbnail.min.js"></script>
 
     
 
@@ -69,22 +72,54 @@
   
   <section class="section section--galeria">
     <article class="container">
-      
+      <div id="lightgallery">
+        <a href="https://via.placeholder.com/800x600">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 1">
+      </a>
+      <a href="https://via.placeholder.com/600x400">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 2">
+      </a>
+      <a href="https://via.placeholder.com/400x800">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 3">
+      </a>
+      <a href="https://via.placeholder.com/600x600">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 4">
+      </a>
+      <a href="https://via.placeholder.com/800x400">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 5">
+      </a>
+      <a href="https://via.placeholder.com/400x400">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 6">
+      </a>
+      <a href="https://via.placeholder.com/800x600">
+          <img src="https://via.placeholder.com/300x300" alt="Imagen 7">
+      </a>
+      <a href="https://via.placeholder.com/600x800" style="display: none;">
+          <img src="https://via.placeholder.com/100x100" alt="Imagen 8">
+      </a>
+      <a href="https://via.placeholder.com/400x600" style="display: none;">
+          <img src="https://via.placeholder.com/100x100" alt="Imagen 9">
+      </a>
+      <a href="https://via.placeholder.com/800x800" style="display: none;">
+          <img src="https://via.placeholder.com/100x100" alt="Imagen 10">
+      </a>
+      <a href="https://via.placeholder.com/600x600" style="display: none;">
+          <img src="https://via.placeholder.com/100x100" alt="Imagen 11">
+      </a>
+      <a href="https://via.placeholder.com/400x800" style="display: none;">
+          <img src="https://via.placeholder.com/100x100" alt="Imagen 12">
+      </a>  
+</div>
 </article>
   </section>
   
         
-
-
-
-  <section class="section">
+  <section class="section section--nogap">
     <article class="container">
-
-      <h2 class="titulo titulo--2 font--center">Título de la segunda sección</h2>
       <div class="img-links">
         <div class="img-link--container">
-          <a href="/competiciones.html">
-          <img src="images/nofoto.jpg"  alt="Avatar" class="img__link">
+          <a href="/galeria.html">
+          <img src="images/competiciones.jpg"  alt="Visita el listado de competiciones" class="img__link">
           <div>
               <div class="text">Competiciones</div>
             </div>
@@ -93,7 +128,7 @@
         
         <div class="img-link--container"">
           <a href="/ranking.html">
-          <img src="images/nofoto.jpg"  alt="Avatar" class="img__link">
+          <img src="images/ranking.jpg"  alt="Visita nuestro ranking" class="img__link">
           <div>
               <div class="text">Ranking</div>
             </div>
@@ -103,14 +138,12 @@
     </article>
         
   </section>
-  
  
-  
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section">
         <h3>Contacto</h3>
-        <p><i class="fas fa-envelope"></i> info@tudominio.com</p>
+        <p><i class="fas fa-envelope"></i> info@dancesync.com</p>
         <p><i class="fas fa-phone"></i> +1234567890</p>
       </div>
       <div class="footer-section">
@@ -122,6 +155,13 @@
           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
       </div>
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una compañía dedicada a ofrecer los mejores servicios para los amantes del baile deportivo.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p><a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad y Cookies</a></p>
     </div>
   </footer>
   <div id="login-modal" class="overlay">
@@ -179,7 +219,15 @@
 </div>
 <script src="scripts/lightgallery.min.js"></script>
 <script type="text/javascript">
-    lightGallery(document.getElementById('lightgallery'))
+lightGallery(document.getElementById('lightgallery'), {
+    thumbnail: true,
+    plugins: [lgThumbnail],
+    zoomFromOrigin: false,
+    allowMediaOverlap: true,
+    toggleThumb: true,
+});
+
+
 </script>
 
 

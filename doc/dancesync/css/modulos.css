@@ -50,7 +50,6 @@ ENLACES IMAGEN - foto link
 *******************************/
 .img-links {
   display: flex;
- 
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
@@ -65,7 +64,7 @@ ENLACES IMAGEN - foto link
 .img__link {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
   transition: filter 0.5s ease;
 }
@@ -86,12 +85,13 @@ ENLACES IMAGEN - foto link
 }
 
 .img-link--container:hover .img__link {
-  filter: blur(5px);
+  filter: brightness(0.5); 
 }
 
 .text {
   color: var(--color-primario);
-  font-size: 2.5rem;
+  text-shadow: 2px 3px black;
+  font-size: var(--font-xxl);
   text-transform: uppercase;
   position: absolute;
   font-weight: 600;
@@ -116,6 +116,7 @@ ENLACES IMAGEN - foto link
     opacity: 0.3;
   }
 }
+
   /*******************************
 BANDA CONTACTO - fondo y texto
 *******************************/
@@ -169,7 +170,7 @@ BANDA CONTACTO - fondo y texto
 
 .eventos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   gap: 2rem;
   margin-top: 20px;
 }
@@ -178,7 +179,7 @@ BANDA CONTACTO - fondo y texto
   background-color: var(--blanco);
   border: 1px solid #ddd;
   border-radius: 0.5rem;
-  
+  color: black;
   padding: 2rem;
   text-align: center;
 }
@@ -242,6 +243,6 @@ BANDA CONTACTO - fondo y texto
 }
 
 .working--loader video {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }

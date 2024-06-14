@@ -26,7 +26,6 @@ async function ajax(options) {
     }
 }
 
-// Función para obtener eventos
 function getEventos() {
     ajax({
         url: url,

@@ -71,6 +71,7 @@ html {
   font-family: var(--font1);
   color: var(--font-color);
   font-weight: 400;
+  width: 100vw;
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
@@ -129,7 +130,9 @@ p {
   padding: var(--padding-v) var(--padding-h);
 }
 
-
+.section.section--nogap {
+  padding: 0 var(--padding-h) var(--padding-v) var(--padding-h);
+}
 
 
 /* TITULOS */
@@ -227,33 +230,36 @@ p {
   transition: transform 0.3s ease-out;
 }
 /* FOOTER */
-
 .footer {
   background-color: var(--negro);
   padding: 30px 20px;
   color: var(--blanco);
   text-align: center;
+  position: relative;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .footer-section {
   margin-bottom: 20px;
   flex: 1 1 200px;
+  padding: 0 20px;
 }
 
 .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--blanco);
 }
 
 .footer-section p {
   margin-bottom: 5px;
+  color: var(--blanco);
 }
 
 .social-links {
@@ -268,18 +274,14 @@ p {
 }
 
 .social-links a {
-  color: #fff;
+  color: var(--blanco);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #007bff;
-}
-
-.footer-section {
-  position: relative;
+  color: var(--color-primario);
 }
 
 .footer-section:before {
@@ -292,6 +294,29 @@ p {
   height: 1px;
   background-color: #555;
 }
+
+.footer-legal {
+  background-color: #222;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+.footer-legal p {
+  margin: 0;
+  color: #ccc;
+}
+
+.footer-legal a {
+  color: var(--color-primario);
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--blanco);
+}
+
 
 /** SLIDER **/
 .portada--img {
@@ -327,6 +352,35 @@ p {
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+}
+/*CONTACTO*/
+.contacto {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contacto h2 {
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  margin-bottom: 8px;
+  color: var(--negro);
+}
+
+.contacto p i {
+  margin-right: 8px;
+}
+
+.contacto p .strong {
+  font-weight: bold;
+}
+
+.font--primario {
+  color: var(--color-primario);
 }
 
 @media (max-width: 1024px) {
