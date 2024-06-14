@@ -67,7 +67,7 @@
 
 ## Licenza
 
-[Licenza](doc/LICENSE.md)
+[Licenza](LICENSE)
 
 ## Índice
 
