@@ -9,8 +9,6 @@
 
 ## 1- Diagrama da arquitectura
 
-> *EXPLICACIÓN:* Incluír os diagramas de arquitectura que representen de forma gráfica a aplicación, os seus compoñentes e a súa interrelación: front-end, back-end, bases de datos, nube, microservizos, etc.
-
 ## 2- Casos de uso
 Nun futuro substituirase o usuario administrador por un usuario de cada empresa organizadora.
 
