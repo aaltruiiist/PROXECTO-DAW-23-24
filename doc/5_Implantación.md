@@ -20,6 +20,9 @@
 > - Carga inicial de datos na base de datos: Dende "phpmyadmin" que ofrece o XAMPP importaráse o contido do arquivo "base.sql"
 > - Usuarios da aplicación: Durante esta fase de desenvolvemento (ainda que o rexistro e inicio de sesion esten implementados) non será necesario ter unha autentificacion na aplicación para o seu uso. Nun futuro haberá diferentes tipos de usuarios, entre eles de tipo empresa, que seran os encargados de engadir as ofertas de empleo. É un administrador que terá unha interfaz para engador as competicións. 
 > Como usuario de proba esta o seguinte: email--> info@dancesync.com contrasinal--> abc123.
+>
+> Actualmente os usuarios non dispoñen de ninguna interfaz personalizada.
+>
 > 
 
 ### 1.2- Administración do sistema
@@ -29,7 +32,8 @@
 ## 2- Manual de usuario
 
 >O uso da plataforma DanceSync e intuitiva e sinxela de utilizar, non se precisa un aprendizaxe
-
+>
+> Para acceder a caracteristica máis importante como a inscripción hay 2 maneiras, no apartado de "Competi"
 ## 3- Melloras futuras
 
 > Nun futuro implementarase o pago online (estaba pensado a súa implementacion para unha fase temprana do desenvolvemento pero debido ao tempo non se implementou), tamen se implementarán os seguintes apartados: Ranking, ReDance e Empleo. Estós ultimos apartados estan en fase de deseño mediante Figma.
