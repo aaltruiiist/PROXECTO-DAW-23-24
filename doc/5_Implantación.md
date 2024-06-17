@@ -33,7 +33,13 @@
 
 >O uso da plataforma DanceSync e intuitiva e sinxela de utilizar, non se precisa un aprendizaxe
 >
-> Para acceder a caracteristica máis importante como a inscripción hay 2 maneiras, no apartado de "Competi"
+> Para acceder a caracteristica máis importante como a inscripción hay 2 maneiras, no apartado de "Competiciones" na que ao seleccionar unha se redirixira ao usuario aos formularios de inscripcion. Despois o seu uso e moi intutivo, ao rellenar un formulario, enviarase un correo ao email indicado no mesmo formulario cos datos inseridos.
+>
+> O resto de caracteristicas son bastante intuitivas xa que navegase mediante a barra de navegación
+>
+> No casos dos apartados non implementados, hay un pequeno deseño (algun non ten todo o funcionamento que terá nun futuro) feito en Figma
+>
+> [Enlace Figma](https://www.figma.com/design/FcxxBjD9Gvy7aqHvUyR3aN/PROXECTO-DAW-23-24-%C3%81lvaro?node-id=0-1&t=AxDBNHjHFN5ZGvfV-1)
 ## 3- Melloras futuras
 
 > Nun futuro implementarase o pago online (estaba pensado a súa implementacion para unha fase temprana do desenvolvemento pero debido ao tempo non se implementou), tamen se implementarán os seguintes apartados: Ranking, ReDance e Empleo. Estós ultimos apartados estan en fase de deseño mediante Figma.
