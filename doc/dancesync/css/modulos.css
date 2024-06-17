@@ -112,6 +112,9 @@ ENLACES IMAGEN - foto link
     filter: brightness(0.7);
   }
 
+  .text {
+    font-size: var(--font-l);
+  }
   .img-link__overlay {
     opacity: 0.3;
   }

@@ -168,7 +168,13 @@ Total anual = 15615 + 1800 = 17415 €
 > Mantemos o precio, para manter aos clientes, o que tamen incita ao resto de empresas a usar os nosos servizos, polo que algunha empresa comeza a facer competicions dobles  > alguns meses
 > 
 > 4 eventos ao mes: 2720€
->   2720€ x 12 meses = 32640€ no cuartos ano
+>   2720€ x 12 meses = 32640€ no cuarto ano
+>
+>  5º ANO:
+> Incrementamos 50€ o coste do servizo para implementar novas caracteristicas na plataforma e pasa a ser de 450€ (730€ de media por evento)
+> 
+> 4 eventos ao mes: 2920€
+>   2920€ x 12 meses = 35040€ no quinto ano
 
 
 ### 2.8- Viabilidade
@@ -204,6 +210,12 @@ Total anual = 15615 + 1800 = 17415 €
 > 4 eventos ao mes: 2720€
 >   2720€ x 12 meses = 32640€ no cuarto ano
 >   32640€ - 17415€ (Gastos) = 15.225€ de beneficios
+>
+> 5º ANO:
+> Co pequeno aumento de prezo os calculos aproximados serían:
+>
+> 4 eventos ao mes: 2920€
+> 35040€ -17415€(Gastos) = 17625€ de beneficios
 #### 2.8.3- Conclusión
 > - Os beneficios do proxecto son superiores aos costes?
 >

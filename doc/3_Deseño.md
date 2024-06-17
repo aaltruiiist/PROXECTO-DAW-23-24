@@ -27,7 +27,8 @@ Nun futuro substituirase o usuario administrador por un usuario de cada empresa 
 >   <img src="imagenes/ER-Ranking.png" alt="Modelo ER da base de datos Ranking">
 > 
 > - Modelo relacional:
-> 
+> <img src="imagenes/Relacional-Usuarios.png" alt="Modelo Relacional da tabla usuarios">
+> <img src="imagenes/Relacional-Base.png" alt="Modelo Relacional da Base de datos">
 >     
 > 
 

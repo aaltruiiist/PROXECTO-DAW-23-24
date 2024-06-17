@@ -9,12 +9,13 @@
 
 ## 1- Codificación
 
->[Codigo](dancesync/)
+[Codigo](dancesync/)
 
 ## 2- Prototipos
 
-> Os prototipos estarán feitos para características da web que por tempo non se puideron implementar
+ Os prototipos estarán feitos para características da web que por tempo non se puideron implementar
 
+[Enlace ao figma](https://www.figma.com/design/FcxxBjD9Gvy7aqHvUyR3aN/PROXECTO-DAW-23-24-%C3%81lvaro?node-id=0-1&t=AxDBNHjHFN5ZGvfV-1)
 
 ## 3- Innovación
 

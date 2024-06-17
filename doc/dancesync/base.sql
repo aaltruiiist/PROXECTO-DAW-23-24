@@ -210,8 +210,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID_Usuario`, `Nombre`, `Apellidos`, `Email`, `pass`) VALUES
-(4, 'Alvaro', 'Lamas', 'alvaro.balixe@gmail.com', '$2y$10$YAlF18m5jB1gUC.soz1Sb.x8udU2HZu8SdGVC9aiY0RKBAdBvf0Iu'),
-(7, 'Alvaro', 'Lamas', 'altruistgames1@gmail.com', '$2y$10$1A4v6doxzBXw8z.sm6PvseDsLbnJtn064I9cm16LfkRwc8uFIO9/u');
+(1, 'Usuario', 'Prueba', 'info@dancesync.com', '$2y$10$YAlF18m5jB1gUC.soz1Sb.x8udU2HZu8SdGVC9aiY0RKBAdBvf0Iu');
 
 --
 -- Índices para tablas volcadas
