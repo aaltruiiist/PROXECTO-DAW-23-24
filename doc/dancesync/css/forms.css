@@ -68,7 +68,8 @@
     width: 100%; 
     padding: 0.8rem;
     font-size: 1.2rem;
-    color: var(--blanco);
+    font-weight: var(--bold1);
+    color: var(--negro);
     background-color: var(--color-primario);
     border: none;
     border-radius: 5px;
@@ -153,7 +154,8 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.2rem;
-    color: var(--blanco);
+    color: var(--negro);
+    font-weight: var(--bold1);
     background-color: var(--color-primario);
     border: none;
     border-radius: 5px;
