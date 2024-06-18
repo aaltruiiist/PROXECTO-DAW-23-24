@@ -53,7 +53,7 @@ function renderEventos() {
     let html = eventos.slice(0, 3).map(evento =>
         `
         <a class="cuadro" href="competicion.html" onclick="localStorage.setItem('evento', JSON.stringify(eventosLoc.filter(el => el.ID_Evento == '${evento.ID_Evento}')));">
-            <h3>${evento.Nombre}</h3>
+            <p class="title title--3">${evento.Nombre}</p>
             <p>${evento.Fecha}</p>
         </a>`
     ).join('');
