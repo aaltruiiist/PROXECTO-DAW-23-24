@@ -103,7 +103,7 @@ p {
   top: 0;
 }
 
-.portada--img .titulo {
+.portada--img .titulo:not(p) {
   text-align: center;
   text-shadow: 3px 3px black;
 }
