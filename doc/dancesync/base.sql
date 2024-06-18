@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2024 a las 17:03:11
+-- Tiempo de generación: 18-06-2024 a las 15:14:02
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -22,8 +22,6 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
-
 CREATE DATABASE dancesync;
 
 use dancesync;
@@ -73,7 +71,7 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`ID_Evento`, `Nombre`, `Fecha`, `Localizacion`, `Director`, `Secretario`, `Escrutinio`, `Licencia_DJ`, `Pista`, `Finalizado`) VALUES
-(1, 'Atlantic Open Marín 2024', '2024-06-09', 'Pavillón Municipal de A Raña\r\nRúa Recamán, 26, 36915 Marín, Pontevedra', 'Javier Gómez Herrera', 'Mateo Castro Navarro', 'FEBD', 'Andrés Paz', '27x17', 1),
+(1, 'Atlantic Open Marín 2024', '2024-07-09', 'Pavillón Municipal de A Raña\r\nRúa Recamán, 26, 36915 Marín, Pontevedra', 'Javier Gómez Herrera', 'Mateo Castro Navarro', 'FEBD', 'Andrés Paz', '27x17', 1),
 (2, 'Circuito Ibérico 2024', '2024-08-06', 'R. Canónigo Valiño, s/n, 36700 Tui, Pontevedra', 'Laura Fernández Martínez', 'Andrés López García', 'FEBD', 'Sonia Castro', '30x20', 0),
 (3, 'Torneo Internacional Vigo 2024', '2024-09-12', 'Complejo Deportivo As Travesas\r\nAv. de Castrelos, 1, 36210 Vigo, Pontevedra', 'Carla Rodríguez Pérez', 'Martín Sánchez Torres', 'FEBD', 'Antón Silva', '28x18', 0),
 (4, 'Campeonato Gallego Santiago 2024', '2024-10-15', 'Estadio Multiusos de San Lázaro\r\nAv. Fernando de Casas Novoa, s/n, 15703 Santiago de Compostela, A Coruña', 'Sofía Morales Díaz', 'Javier Gómez Herrera', 'FEBD', 'Anxo Pérez', '29x19', 0),
@@ -114,6 +112,9 @@ CREATE TABLE `eventos_participantecoreo` (
   `ID_Evento` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `eventos_participantecoreo`
+
 -- --------------------------------------------------------
 
 --
@@ -125,6 +126,11 @@ CREATE TABLE `eventos_participantesingle` (
   `ID_Evento` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `eventos_participantesingle`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -135,6 +141,8 @@ CREATE TABLE `eventos_participantesparejas` (
   `ID_Pareja` int(11) NOT NULL,
   `ID_Evento` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 
 -- --------------------------------------------------------
 
@@ -153,6 +161,7 @@ CREATE TABLE `participantes_coreografica` (
   `Categoria` varchar(255) NOT NULL,
   `Cancion` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 -- --------------------------------------------------------
 
@@ -173,6 +182,7 @@ CREATE TABLE `participantes_parejas` (
   `Cat_Latinos` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
 -- --------------------------------------------------------
 
 --
@@ -191,6 +201,7 @@ CREATE TABLE `participantes_single` (
   `Cat_Latinos` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+
 -- --------------------------------------------------------
 
 --
@@ -205,14 +216,7 @@ CREATE TABLE `usuarios` (
   `pass` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Volcado de datos para la tabla `usuarios`
---
 
-INSERT INTO `usuarios` (`ID_Usuario`, `Nombre`, `Apellidos`, `Email`, `pass`) VALUES
-(1, 'Usuario', 'Prueba', 'info@dancesync.com', '$2y$10$YAlF18m5jB1gUC.soz1Sb.x8udU2HZu8SdGVC9aiY0RKBAdBvf0Iu');
-
---
 -- Índices para tablas volcadas
 --
 
@@ -234,13 +238,6 @@ ALTER TABLE `eventos`
 ALTER TABLE `eventos_empresa`
   ADD PRIMARY KEY (`ID_Evento`,`ID_Empresa`),
   ADD KEY `fk_eventos_empresa_empresas` (`ID_Empresa`);
-
---
--- Indices de la tabla `eventos_parejas`
---
-ALTER TABLE `eventos_parejas`
-  ADD KEY `fk_eventos_parejas_eventos` (`ID_Evento`),
-  ADD KEY `fk_eventos_parejas_participantes_parejas` (`ID_Participante`);
 
 --
 -- Indices de la tabla `eventos_participantecoreo`
@@ -307,19 +304,19 @@ ALTER TABLE `eventos`
 -- AUTO_INCREMENT de la tabla `participantes_coreografica`
 --
 ALTER TABLE `participantes_coreografica`
-  MODIFY `ID_Grupo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Grupo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `participantes_parejas`
 --
 ALTER TABLE `participantes_parejas`
-  MODIFY `ID_Pareja` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Pareja` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `participantes_single`
 --
 ALTER TABLE `participantes_single`
-  MODIFY `ID_Single` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Single` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
@@ -337,13 +334,6 @@ ALTER TABLE `usuarios`
 ALTER TABLE `eventos_empresa`
   ADD CONSTRAINT `fk_eventos_empresa_empresas` FOREIGN KEY (`ID_Empresa`) REFERENCES `empresas` (`ID_Empresa`),
   ADD CONSTRAINT `fk_eventos_empresa_eventos` FOREIGN KEY (`ID_Evento`) REFERENCES `eventos` (`ID_Evento`);
-
---
--- Filtros para la tabla `eventos_parejas`
---
-ALTER TABLE `eventos_parejas`
-  ADD CONSTRAINT `fk_eventos_parejas_eventos` FOREIGN KEY (`ID_Evento`) REFERENCES `eventos` (`ID_Evento`),
-  ADD CONSTRAINT `fk_eventos_parejas_participantes_parejas` FOREIGN KEY (`ID_Participante`) REFERENCES `participantes_parejas` (`ID_Pareja`);
 
 --
 -- Filtros para la tabla `eventos_participantecoreo`
