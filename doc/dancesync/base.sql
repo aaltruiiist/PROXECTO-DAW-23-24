@@ -219,7 +219,9 @@ CREATE TABLE `usuarios` (
 
 -- Índices para tablas volcadas
 --
-
+INSERT INTO `usuarios` VALUES(
+  1, "Prueba", "Prueba", "prueba@prueba.com", "$2y$10$p5amLjXMt4JSfMRYSFtJbOctUMae5m0ku9ht7i2EFD5xLnaL9oepm"
+);
 --
 -- Indices de la tabla `empresas`
 --

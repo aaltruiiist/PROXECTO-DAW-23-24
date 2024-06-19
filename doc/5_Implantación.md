@@ -19,7 +19,7 @@
 >     Navegador Web - Será necesario para acceder á web
 > - Carga inicial de datos na base de datos: Dende "phpmyadmin" que ofrece o XAMPP importaráse o contido do arquivo "base.sql"
 > - Usuarios da aplicación: Durante esta fase de desenvolvemento (ainda que o rexistro e inicio de sesion esten implementados) non será necesario ter unha autentificacion na aplicación para o seu uso. Nun futuro haberá diferentes tipos de usuarios, entre eles de tipo empresa, que seran os encargados de engadir as ofertas de empleo. É un administrador que terá unha interfaz para engador as competicións. 
-> Como usuario de proba esta o seguinte: email--> info@dancesync.com contrasinal--> abc123.
+> Como usuario de proba esta o seguinte: email--> prueba@prueba.com contrasinal--> abc1234.
 >
 > Actualmente os usuarios non dispoñen de ninguna interfaz personalizada.
 >
