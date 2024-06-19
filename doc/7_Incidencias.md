@@ -12,5 +12,6 @@ Outra incidencia foi o manexo dos erros dos formularios, que terminei utilizando
 
 Tamén tiven problemas en como manexar as páxinas de queda competición, xa que crear un html para cada evento seria un traballo demasiado complexo, asique usando o localStorage do navegador e parseando os datos que me devolve a base de datos mediante os arquivos PHP, decidin usar unha plantilla, na que ao cargar o contido da páxina se recuperen os datos da competicion e se printeen na estructura da web.
 
+Tamén se decidiu desbotar a idea de utilizar a libreria Swiper debido a dificil implantación, onde se queria.
 ## 2- Tarefas
 
